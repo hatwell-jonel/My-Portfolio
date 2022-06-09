@@ -1,0 +1,7 @@
+TODO:
+- theme switch
+- see more
+- typing animation
+
+REFS:
+// https://seanred.io/
