@@ -1,0 +1,12 @@
+.theme-switch {
+  transition: 0.3s ease;
+  background-color: $clr-light-bg;
+
+  .header {
+    .container {
+      .btn_theme {
+        color: $clr-light-text;
+      }
+    }
+  }
+}

@@ -1,7 +1,12 @@
 TODO:
-- theme switch
-- see more
-- typing animation
+- theme switch []
+- see more []
+- Logo []
+- typing animation []
 
 REFS:
 // https://seanred.io/
+// https://github.com/catalinmiron/react-typical
+// https://github.com/rcaferati/react-awesome-slider
+// https://icon-sets.iconify.design/bi/emoji-smile-fill/
+// https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html#

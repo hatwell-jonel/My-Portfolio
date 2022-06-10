@@ -1,0 +1,32 @@
+.header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  .container {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+    .logo {
+      height: 50px;
+    }
+
+    .btn_theme {
+      background-color: transparent;
+      padding: 3px;
+      font-size: 0.675rem;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      //   SWITCHER
+      color: $clr-dark-text;
+
+      &-icon {
+        margin-right: 5px !important;
+      }
+    }
+  }
+}

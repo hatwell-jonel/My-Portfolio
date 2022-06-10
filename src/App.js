@@ -1,7 +1,14 @@
 import React from "react";
+import { Header, Main, Footer } from "./components";
 
 function App() {
-  return <>App</>;
+  return (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
