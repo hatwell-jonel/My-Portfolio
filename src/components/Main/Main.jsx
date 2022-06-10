@@ -1,7 +1,12 @@
 import React from "react";
+import Intro from "./Intro";
 
 function Main() {
-  return <div>Main</div>;
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
 }
 
 export default Main;

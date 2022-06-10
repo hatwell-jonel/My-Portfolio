@@ -9,4 +9,16 @@
       }
     }
   }
+
+  main {
+    .intro {
+      .container {
+        .content {
+          &_text {
+            color: $clr-light-text;
+          }
+        }
+      }
+    }
+  }
 }

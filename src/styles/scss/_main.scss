@@ -1,0 +1,40 @@
+main {
+  .intro {
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        max-width: 900px !important;
+        text-align: center;
+        &_text {
+          color: $clr-dark-text;
+        }
+
+        &_hello {
+          font-size: 0.95rem;
+        }
+
+        &_name {
+          word-spacing: -10px;
+          font-family: $ff-heading;
+          letter-spacing: 1px;
+          font-size: clamp(2rem, 10vw, 4rem);
+          margin: 0.5rem 0rem;
+          font-weight: bolder;
+          text-transform: uppercase;
+        }
+
+        &_tagline {
+          font-size: 0.85rem;
+
+          @include breakpoint(md) {
+            font-size: 1.15rem;
+          }
+        }
+      }
+    }
+  }
+}

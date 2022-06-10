@@ -1,5 +1,5 @@
 TODO:
-- theme switch []
+- theme switch [x]
 - see more []
 - Logo []
 - typing animation []
