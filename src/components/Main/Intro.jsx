@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import TypeAnimation from "react-type-animation";
 
 function Intro() {
   return (
@@ -7,11 +7,11 @@ function Intro() {
       <div className="container">
         <section className="content">
           <p className="content_text content_hello">Hello, My name is</p>
-          {/* <h1 className="content_text content_name">Jonel Hatwell</h1> */}
-          <Typical
-            steps={["Jonel Hatwell", 3000]}
-            loop={5}
+          <TypeAnimation
+            cursor={true}
+            sequence={["Jonel Hatwell", 1000, " "]}
             wrapper="h1"
+            repeat={Infinity}
             className="content_text content_name"
           />
           <p className="content_text content_tagline">

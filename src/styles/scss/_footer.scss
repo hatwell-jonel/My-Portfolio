@@ -1,0 +1,91 @@
+.footer {
+  background-color: $clr-dark-footer;
+  padding: 40px 0px;
+  margin-top: 8rem;
+  position: relative;
+  .container {
+    font-family: $ff-heading;
+    text-align: center;
+
+    .blockqoute {
+      font-family: $ff-primary;
+      font-weight: bold;
+      background-color: $clr-accent;
+      max-width: 700px;
+      padding: 1rem;
+      margin: auto;
+      border-radius: 5px;
+      color: $clr-dark-text;
+      font-size: 1rem;
+      margin-top: -6rem;
+
+      @include breakpoint(md) {
+        padding: 1rem 3rem;
+        font-size: 1.15rem;
+      }
+
+      &_cite {
+        display: block;
+        display: flex;
+        justify-content: end;
+        margin-top: 0.5rem;
+        @include breakpoint(md) {
+          padding-right: 3rem;
+        }
+      }
+    }
+
+    .contacts {
+      max-width: 700px;
+      margin: auto;
+      &_title {
+        font-size: clamp(1.3rem, 5vw, 1.5rem);
+        color: $clr-dark-text;
+        margin-top: 3rem;
+
+        @include breakpoint(md) {
+          margin-top: 4rem;
+        }
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 5px;
+          position: absolute;
+          z-index: -2;
+          border-radius: 5px;
+          bottom: 2px;
+          left: 0;
+          background-color: $clr-accent;
+        }
+      }
+
+      .social_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0rem;
+        margin: 0.5rem 0rem;
+        &-items {
+          margin: 0rem 0.4rem;
+
+          a {
+            color: $clr-dark-text;
+            font-size: 1.7rem;
+
+            &:hover {
+              transform: 0.2s ease;
+              color: $clr-accent;
+            }
+          }
+        }
+      }
+
+      .copyright {
+        pointer-events: none;
+        color: darken($clr-dark-text, 20%);
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

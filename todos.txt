@@ -2,7 +2,7 @@ TODO:
 - theme switch [x]
 - see more []
 - Logo []
-- typing animation []
+- typing animation [x]
 
 REFS:
 // https://seanred.io/

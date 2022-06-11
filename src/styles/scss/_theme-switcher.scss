@@ -11,12 +11,62 @@
   }
 
   main {
+    .section_title {
+      color: $clr-light-text;
+    }
+
     .intro {
       .container {
         .content {
           &_text {
             color: $clr-light-text;
           }
+        }
+      }
+    }
+
+    .about {
+      padding: 20px 0px;
+      .container {
+        .about_info {
+          .about_info-bottom {
+            .download-btn {
+              color: $clr-dark-text;
+              border: 2px solid $clr-dark-text;
+
+              &:hover {
+                background-color: $clr-light-bg;
+                color: $clr-light-text;
+                border: 2px solid $clr-light-text;
+              }
+
+              @include breakpoint(md) {
+                margin: initial;
+                margin-top: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: $clr-light-footer;
+    .container {
+      .contacts {
+        &_title {
+          color: $clr-light-text;
+        }
+        .social_links {
+          &-items {
+            a {
+              color: $clr-light-text;
+            }
+          }
+        }
+        .copyright {
+          color: darken($clr-light-text, 20%);
         }
       }
     }
