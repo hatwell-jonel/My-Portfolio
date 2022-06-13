@@ -49,6 +49,16 @@
         }
       }
     }
+
+    .projects {
+      .container {
+        .more_button {
+          button {
+            color: $clr-light-text;
+          }
+        }
+      }
+    }
   }
 
   .footer {
