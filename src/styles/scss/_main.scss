@@ -40,6 +40,7 @@ main {
     padding: 20px 0px;
     .container {
       .about_info {
+        box-shadow: $boxshadow;
         border-radius: 5px;
         padding: 1rem;
         max-width: 700px;
@@ -109,7 +110,75 @@ main {
     }
   }
 
+  .projects {
+    padding: 4.5rem 0rem;
+    .container {
+      max-width: 700px;
+
+      .projects_items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+
+        .item {
+          background-color: $clr-accent;
+          border-radius: 5px;
+          padding: 1rem 0.5rem;
+          height: 285px;
+          overflow: scroll;
+          scrollbar-width: none !important;
+          cursor: pointer;
+          box-shadow: $boxshadow;
+
+          width: 230px;
+          margin: auto;
+
+          @include breakpoint(sm) {
+            width: initial;
+          }
+
+          &::-webkit-scrollbar {
+            appearance: none !important;
+            display: none !important;
+          }
+
+          &:hover {
+            transition: 0.2s ease;
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.82);
+            transform: scale(1.032);
+          }
+
+          .text {
+            &_title {
+              margin: 0.7rem 0rem;
+              text-transform: capitalize;
+              font-size: 0.875rem;
+              color: $clr-dark-text;
+              font-weight: 600;
+              letter-spacing: 1px;
+            }
+          }
+
+          .tech_stack {
+            display: flex;
+            flex-wrap: wrap;
+            &-tag {
+              font-size: 0.7rem;
+              padding: 3px 7px;
+              background-color: darken($clr-accent, 13%);
+              color: $clr-dark-text;
+              border-radius: 50px;
+              margin: 0.1rem;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .stack {
+    padding-bottom: 4rem;
     .container {
       max-width: 700px;
       .stack_info {

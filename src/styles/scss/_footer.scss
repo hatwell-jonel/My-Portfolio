@@ -8,6 +8,7 @@
     text-align: center;
 
     .blockqoute {
+      box-shadow: $boxshadow;
       font-family: $ff-primary;
       font-weight: bold;
       background-color: $clr-accent;
