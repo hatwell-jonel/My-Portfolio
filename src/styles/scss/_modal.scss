@@ -1,0 +1,119 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(7px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: none !important;
+
+  @media screen and(max-height: 300px) {
+    padding-top: 250px !important;
+  }
+  @media screen and(max-height: 400px) {
+    padding-top: 200px !important;
+  }
+
+  &_box {
+    overflow: scroll;
+    border-radius: 5px;
+    height: fit-content;
+    background-color: $clr-dark-bg;
+    box-shadow: $boxshadow;
+    width: 95%;
+    max-width: 360px;
+    padding: 0.3rem;
+    scrollbar-width: none !important;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &:hover {
+        .exit {
+          .icon {
+            color: red;
+          }
+        }
+      }
+      img {
+        width: 30px;
+      }
+
+      .exit {
+        .icon {
+          color: $clr-dark-text;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &-body {
+      padding: 0.8rem 0.6rem;
+      .img {
+        img {
+          width: 100%;
+          height: 150px;
+          border-radius: 4px;
+        }
+      }
+
+      .title {
+        color: $clr-dark-text;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin: 0.5rem 0rem;
+      }
+
+      .modal-stack {
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content !important;
+        margin-bottom: 0.5rem;
+        span {
+          font-size: 0.75em;
+          background-color: darken($clr-accent, 10%);
+          color: $clr-dark-text;
+          margin: 2px;
+          padding: 2px 5px;
+          border-radius: 40px;
+          text-transform: capitalize;
+        }
+      }
+
+      .desc {
+        color: $clr-dark-text;
+        font-size: 0.8rem;
+      }
+
+      .externals {
+        margin-top: 0.8rem;
+        display: flex;
+        .external_links {
+          background-color: darken($clr-accent, 20%);
+          color: $clr-dark-text;
+          font-size: 0.9rem;
+          padding: 8px;
+          text-transform: capitalize;
+
+          width: 100%;
+          text-align: center;
+          display: block;
+
+          &:hover {
+            background-color: $clr-accent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -81,4 +81,46 @@
       }
     }
   }
+
+  .modal {
+    &_box {
+      background-color: $clr-light-bg;
+      box-shadow: $boxshadow;
+
+      &-header {
+        .exit {
+          .icon {
+            color: $clr-light-text;
+          }
+        }
+      }
+
+      &-body {
+        .title {
+          color: $clr-light-text;
+        }
+
+        .modal-stack {
+          span {
+            background-color: darken($clr-accent, 10%);
+            color: $clr-dark-text;
+          }
+        }
+
+        .desc {
+          color: $clr-light-text;
+        }
+
+        .externals {
+          .external_links {
+            color: $clr-dark-text;
+            background-color: $clr-accent;
+            &:hover {
+              background-color: darken($clr-accent, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
 }

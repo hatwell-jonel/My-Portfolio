@@ -1,12 +1,30 @@
 import React, { useState } from "react";
 import { projects } from "../../data/projects";
+import Modal from "./Modal";
 
 function Projects() {
   const [noOfElements, setNoOfElelments] = useState(3);
   const slice = projects.slice(0, noOfElements);
+  const [projDetails, setProjDetails] = useState([]);
+  const [modal, setModal] = useState(false);
 
   const showMore = () => {
     setNoOfElelments(noOfElements + 3);
+  };
+
+  const getProject = (details) => {
+    setModal(true);
+    setProjDetails([
+      {
+        id: details.id,
+        title: details.title,
+        thumbnail: details.thumbnail,
+        desc: details.desc,
+        github: details.github,
+        live_site: details.live_site,
+        tech_stack: details.tech_stack,
+      },
+    ]);
   };
 
   return (
@@ -27,7 +45,7 @@ function Projects() {
             } = item;
 
             return (
-              <div className="item" key={id}>
+              <div className="item" onClick={() => getProject(item)} key={id}>
                 <div className="img">
                   <img src={thumbnail} alt={title} />
                 </div>
@@ -36,13 +54,17 @@ function Projects() {
                 </div>
                 <div className="tech_stack">
                   {tech_stack.map((stack) => (
-                    <span className="tech_stack-tag">{stack}</span>
+                    <span className="tech_stack-tag" key={stack}>
+                      {stack}
+                    </span>
                   ))}
                 </div>
               </div>
             );
           })}
         </section>
+
+        {modal && <Modal setModal={setModal} details={projDetails} />}
 
         {noOfElements !== 9 ? (
           <div className="more_button">
