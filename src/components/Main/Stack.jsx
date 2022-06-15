@@ -14,7 +14,7 @@ function Stack() {
               return (
                 <>
                   <div className="stack_info-box" key={stack.uid}>
-                    <img src={stack.img} alt={stack.name} />
+                    <img src={stack.img} alt={stack.name} lodaing="lazy" />
                   </div>
                 </>
               );

@@ -148,6 +148,13 @@ main {
             transform: scale(1.032);
           }
 
+          .img {
+            img {
+              height: 134px;
+              width: 100%;
+            }
+          }
+
           .text {
             &_title {
               margin: 0.7rem 0rem;

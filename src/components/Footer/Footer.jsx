@@ -24,6 +24,8 @@ function Footer() {
                 href="https://github.com/hatwell-jonel"
                 target="_blank"
                 aria-label="github"
+                title="github"
+                tabIndex={4}
               >
                 <FaGithubSquare />
               </a>
@@ -33,6 +35,8 @@ function Footer() {
                 href="https://www.linkedin.com/in/jonel-hatwell/"
                 target="_blank"
                 aria-label="linkedIn"
+                title="linkedin"
+                tabIndex={5}
               >
                 <FaLinkedin />
               </a>
@@ -42,6 +46,8 @@ function Footer() {
                 href="mailto:jonel.hatwell@gmail.com"
                 target="_blank"
                 aria-label="gmail"
+                title="gmail"
+                tabIndex={6}
               >
                 <MdEmail />
               </a>

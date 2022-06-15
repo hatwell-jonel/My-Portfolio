@@ -45,9 +45,14 @@ function Projects() {
             } = item;
 
             return (
-              <div className="item" onClick={() => getProject(item)} key={id}>
+              <div
+                className="item"
+                title={title}
+                onClick={() => getProject(item)}
+                key={id}
+              >
                 <div className="img">
-                  <img src={thumbnail} alt={title} />
+                  <img src={thumbnail} alt={title} loading="lazy" />
                 </div>
                 <div className="text">
                   <p className="text_title">{title}</p>
@@ -68,7 +73,7 @@ function Projects() {
 
         {noOfElements !== 9 ? (
           <div className="more_button">
-            <button type="button" onClick={showMore}>
+            <button type="button" onClick={showMore} tabIndex={3}>
               Show More...
             </button>
           </div>

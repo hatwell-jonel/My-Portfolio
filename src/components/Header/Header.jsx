@@ -20,9 +20,14 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <img src={logo} className="logo" alt="logo" />
+        <img src={logo} className="logo" alt="logo" title="logo" />
 
-        <button className="btn_theme" onClick={handleTheme}>
+        <button
+          className="btn_theme"
+          onClick={handleTheme}
+          title="theme switcher"
+          tabIndex={1}
+        >
           {document.body.classList.contains("theme-switch") ? (
             <>
               <BsFillMoonFill className="btn_theme-icon" />

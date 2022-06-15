@@ -12,12 +12,17 @@
   align-items: center;
   overflow: auto;
   scrollbar-width: none !important;
+  padding-top: 100px;
 
   @media screen and(max-height: 300px) {
-    padding-top: 250px !important;
+    padding-top: 290px !important;
   }
   @media screen and(max-height: 400px) {
-    padding-top: 200px !important;
+    padding-top: 240px !important;
+  }
+
+  @include breakpoint(lg) {
+    padding-top: 0px;
   }
 
   &_box {
@@ -61,7 +66,7 @@
       .img {
         img {
           width: 100%;
-          height: 150px;
+          height: 190px;
           border-radius: 4px;
         }
       }

@@ -22,7 +22,9 @@ function About() {
               suscipit vel.
             </p>
 
-            <a className="download-btn">Download Resume</a>
+            <a className="download-btn" title="resumé" tabIndex={2}>
+              Download Resume
+            </a>
           </div>
         </section>
       </div>
