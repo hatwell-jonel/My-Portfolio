@@ -6,6 +6,7 @@ import sass from "./../assets/images/stack/sass.svg";
 import javascript from "./../assets/images/stack/javascript.svg";
 import figma from "./../assets/images/stack/figma.svg";
 import bootstrap from "./../assets/images/stack/bootstrap.svg";
+import firebase from "./../assets/images/stack/firebase.png";
 
 let uuid = uid();
 export const stack = [
@@ -43,5 +44,10 @@ export const stack = [
     id: uuid,
     img: sass,
     name: "scss",
+  },
+  {
+    id: uuid,
+    img: firebase,
+    name: "firebase",
   },
 ];

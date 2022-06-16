@@ -1,5 +1,6 @@
 import React from "react";
 import gif from "../../assets/images/computer-gif.gif";
+import resume from "../../data/JonelHatwell-Resume.pdf";
 
 function About() {
   return (
@@ -24,7 +25,13 @@ function About() {
               logical thinking skills, which gives me the feeling of enthusiasm.
             </p>
 
-            <a className="download-btn" title="resumé" tabIndex={2}>
+            <a
+              href={resume}
+              className="download-btn"
+              title="resumé"
+              tabIndex={2}
+              download="JonelHatwell-Resume.pdf"
+            >
               Download Resume
             </a>
           </div>
