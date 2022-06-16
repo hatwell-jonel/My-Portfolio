@@ -36,6 +36,10 @@
     padding: 0.3rem;
     scrollbar-width: none !important;
 
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     &-header {
       display: flex;
       align-items: center;
