@@ -20,7 +20,7 @@ function About() {
               university, I am expecting to be graduated this year (2022).
               <br />
               <br />I have fundamental knowledge on front-end technologies like
-              strong ReactJs, Figma, and Boostrap etc,. What I like the most
+              ReactJs, Figma, and Boostrap etc,. What I like the most
               about this field of development is I can express my creativity and
               logical thinking skills, which gives me the feeling of enthusiasm.
             </p>
