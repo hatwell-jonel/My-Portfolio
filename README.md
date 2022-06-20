@@ -15,7 +15,7 @@
 
 ## LIVE SITE
 
-- [Click here](jonelhatwell.vercel.app)
+- [Click here](https://jonelhatwell.vercel.app)
 
 ## My Social media accounts
 
