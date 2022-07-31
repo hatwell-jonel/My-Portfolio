@@ -6,6 +6,7 @@ import coumtries from "../assets/images/thumnail/countries.jpg";
 import timetracking from "../assets/images/thumnail/time-tracking-dashboard.jpg";
 import insure from "../assets/images/thumnail/insure.jpg";
 import pricing from "../assets/images/thumnail/pricing.jpg";
+import picshot from "../assets/images/thumnail/picshot.png";
 
 export const projects = [
   {
@@ -26,6 +27,15 @@ export const projects = [
   },
   {
     id: uid(),
+    thumbnail: picshot,
+    title: "Picshot",
+    desc: "A website where you can search, browse and download photos for free, I used Unsplash API and Redux-toolkit to complete this amazing website.",
+    github: "https://github.com/hatwell-jonel/reactjs-picshot.git",
+    live_site: "https://reactjs-picshot.vercel.app/",
+    tech_stack: ["reactjs", "css module", "redux-toolkit", "Unsplash API"],
+  },
+  {
+    id: uid(),
     thumbnail: tipcalc,
     title: "tip calculator",
     desc: "This projects is a challenge from frontendmentor.io. creating this mini project helps me to improved my knowledge on Javascript and logical thinking.",
@@ -43,17 +53,6 @@ export const projects = [
     live_site:
       "https://frontendmentor-countries-reactjs-5kb53opt3-hatwell-jonel.vercel.app/",
     tech_stack: ["Reactjs", "API", "scss", "theme switch", "Local Storage"],
-  },
-  {
-    id: uid(),
-    thumbnail: timetracking,
-    title: "Time Tracking Dashboard",
-    desc: "This projects is a challenge from frontendmentor.io. this project is not dymanic, however,  this teach me about how can use CSS Grid, JSON and Random user API better. ",
-    github:
-      "https://github.com/hatwell-jonel/frontendmentor-time-tracking-dashboard.git",
-    live_site:
-      "https://hatwell-jonel.github.io/frontendmentor-time-tracking-dashboard/",
-    tech_stack: ["bootstrap", "Javascript ", "JSON", "API"],
   },
 
   {
@@ -77,7 +76,9 @@ export const projects = [
       "https://hatwell-jonel.github.io/frontendmentor-blogr-landingpage/",
     tech_stack: ["scss", "css grid ", "flexbox", "mobile-first workflow"],
   },
+];
 
+const moreProjects = [
   {
     id: uid(),
     thumbnail: pricing,
@@ -88,6 +89,16 @@ export const projects = [
       "https://hatwell-jonel.github.io/frontendmentor-blogr-landingpage/",
     tech_stack: ["scss", "javscript", "mobile-first workflow "],
   },
-];
 
-const moreProjects = [{}];
+  {
+    id: uid(),
+    thumbnail: timetracking,
+    title: "Time Tracking Dashboard",
+    desc: "This projects is a challenge from frontendmentor.io. this project is not dymanic, however,  this teach me about how can use CSS Grid, JSON and Random user API better. ",
+    github:
+      "https://github.com/hatwell-jonel/frontendmentor-time-tracking-dashboard.git",
+    live_site:
+      "https://hatwell-jonel.github.io/frontendmentor-time-tracking-dashboard/",
+    tech_stack: ["bootstrap", "Javascript ", "JSON", "API"],
+  },
+];
