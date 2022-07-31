@@ -19,10 +19,9 @@ function About() {
               Bachelor of Science in Information Technology (BSIT).
               <br />
               <br />I have fundamental knowledge on front-end technologies like
-              strong ReactJs, Javascript, and Boostrap etc,. What I like the
-              most about this field of development is I can express my
-              creativity and logical thinking skills, which gives me a feeling
-              of enthusiasm.
+              ReactJs, Figma, and Boostrap etc,. What I like the most about this
+              field of development is I can express my creativity and logical
+              thinking skills, which gives me the feeling of enthusiasm.
             </p>
 
             <a
