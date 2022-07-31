@@ -15,7 +15,7 @@ function About() {
           <div className="about_info-bottom">
             <p>
               Hello ✋! I'm Jonel Hatwell, an enthusiastic front-end developer.
-              I graduated at at City of Malabon university under the program of
+              I graduated at City of Malabon university under the program of
               Bachelor of Science in Information Technology (BSIT).
               <br />
               <br />I have fundamental knowledge on front-end technologies like
